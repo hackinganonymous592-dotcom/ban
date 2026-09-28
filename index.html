@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#020605">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>SUBZERO TECH BAN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section id="accessScreen" class="card access-card">
+      <div class="brand">SUBZERO TECH BAN</div>
+      <label class="label" for="accessCode">ACCESS CODE</label>
+      <input id="accessCode" type="password" autocomplete="off" placeholder="Enter access code">
+      <button id="accessBtn" class="primary">ACCESS</button>
+      <p id="accessStatus" class="status"></p>
+    </section>
+
+    <section id="banScreen" class="card hidden">
+      <div class="brand">SUBZERO TECH BAN</div>
+
+      <label class="label" for="phone">WHATSAPP NUMBER</label>
+      <input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+18091234567">
+
+      <div class="choices" role="group" aria-label="Report type">
+        <button type="button" class="choice active" data-type="temporary">BAN TEMPORAIRE</button>
+        <button type="button" class="choice" data-type="permanent">BAN PERMANENT</button>
+      </div>
+
+      <button id="banBtn" type="button" class="primary ban-btn">BAN</button>
+      <p id="banStatus" class="status"></p>
+
+      <div class="footer">POWERED BY SZ DEV</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
